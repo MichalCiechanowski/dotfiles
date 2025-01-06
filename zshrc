@@ -12,8 +12,16 @@ alias vim="nvim"
 alias exitcode="echo $?"
 
 alias clean_rust="find . -name Cargo.toml -execdir cargo clean \;"
+
 # end alias section
+
 eval "$(starship init zsh)"
+
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+ZSH_HIGHLIGHT_STYLES[command]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=green,bold'
+
 # prompt section
 # function git_branch_name() {
 #   local branch=$(git symbolic-ref --short HEAD 2>/dev/null)
