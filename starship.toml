@@ -1,11 +1,14 @@
 add_newline = false
 
-[character] 
-success_symbol = '[->](bold green)' 
-error_symbol = '[->](bold red)' 
+[character]
+success_symbol = '[->](bold green)'
+error_symbol = '[->](bold red)'
 
 [directory]
 truncation_length = 1000
 truncate_to_repo = false
 
-
+[git_status]
+format = '([\[$modified\]]($style)) '
+modified = '✎ ${count}'  # Symbol and count for changed (modified) files
+style = 'bold yellow'    # Optional: styling for the git_status output
